@@ -35,7 +35,7 @@ app.get('/info', (req, res) => {
 });
 
 app.get('/test.png', (req, res) => {
-  res.sendFile(path.join(__dirname, '/test.png'));
+  res.show('test.png');
 });
 
 app.use((req, res) => {
