@@ -34,11 +34,7 @@ app.get('/info', (req, res) => {
   res.show('404.html');
 });
 
-app.get('/test.png', (req, res) => {
-  res.show('test.png');
-});
-
 app.use((req, res) => {
-  res.status(404).send('404 not found...');
+  res.status(404).show('test.png');
 });  
 
